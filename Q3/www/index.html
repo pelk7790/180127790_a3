@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FakeChimp's Registration Form</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Proza+Libre&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" async></script>
+  <img src="media/logo2.png" alt="logo" width="120px">
+</head>
+
+<header>
+  Get Started With Your Account
+</header>
+
+<body>
+  <div>Find your people. Engage your customers. Bulid your brand. Do it all with FakeChimp's Marketing Platform.</div>
+
+  <form onsubmit="return validateForm();"
+    action="http://cp202-server.appspot.com/register_with_image"
+    method="post"
+    enctype="multipart/form-data">
+    <p>
+      <input type="hidden" name="student_id" id="student_id" value="180127790">
+      Email: <input type="text" name="email" id="email">
+    </p>
+
+    <p>
+      <input type="file" name="avatarImage" id="avatarImage">
+    </p>
+
+    <p>
+      <select name="country">
+        <option value="country">Canada</option>
+        <option value="country">United States</option>
+        </p>
+      </select>
+    </p>
+
+    <p>
+      <input type="text" name="description" id="description" value="This is the description.">
+    </p>
+
+    <p>
+      <input type="submit" value="REGISTER">
+    </p>
+  </form>
+
+</body>
+
+
+<footer>
+  @2019 All Rights Reserved. FakeChimp® is a registered trademark of WLUCP202 Class.
+</footer>
+
+</html>

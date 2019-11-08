@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Checkout</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="http://wlu-cp202.appspot.com/CP202/Fall2019/shopping_cart_v1/checkout.js" async></script>
+<link rel="stylesheet" href="css/styles.css">
+
+<link rel="shortcut icon" type="image/png" href="media/favicon.ico">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+<title>Checkout!</title>
+<ul>
+  <li>
+    <a href="index.html">
+      <div class="icon">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <i class="fa fa-home" aria-hidden="true"></i>
+      </div>
+      <div class="name"><span data-text="Home">Home</span></div>
+    </a>
+  </li>
+  <li>
+    <a href="products.html">
+      <div class="icon">
+        <i class="fa fa-product-hunt" aria-hidden="true"></i>
+        <i class="fa fa-product-hunt" aria-hidden="true"></i>
+      </div>
+      <div class="name"><span data-text="Products">Products</span></div>
+    </a>
+  </li>
+  <li>
+    <a href="strawberry.html">
+      <div class="icon">
+        <i class="fa fa-diamond" aria-hidden="true"></i>
+        <i class="fa fa-diamond" aria-hidden="true"></i>
+      </div>
+      <div class="name"><span data-text="Strawberry Donut">Strawberry Donut</span></div>
+    </a>
+  </li>
+  <li>
+    <a href="coffee.html">
+      <div class="icon">
+        <i class="fa fa-coffee" aria-hidden="true"></i>
+        <i class="fa fa-coffee" aria-hidden="true"></i>
+      </div>
+      <div class="name"><span data-text="Coffee Donut">Coffee Donut</span></div>
+</a>
+</li>
+</ul>
+<link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<div class="button-wrapper">
+</div>
+</head>
+
+<header>
+  <h1>Checkout!</h1>
+</header>
+<body>
+  <div id="cp202-cart"></div>
+  <form action="http://cp202-server.appspot.com/order" method="post">
+    <input type="hidden" name="order_json" id="order_json" value="">
+    <input type="hidden" name="student_id" id="student_id" value="180127790">
+
+    <input type="submit">
+    </form>
+  </body>
+  <footer>
+    <h1>@2019</h1>
+  </footer>
