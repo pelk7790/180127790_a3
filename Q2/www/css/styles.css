@@ -3,14 +3,22 @@ input[type=text], input[type=password] {
   padding: 15px;
   margin: 1px 0 22px 0;
 }
+
+
 .input:focus{
   outline: none! important;
   border: 1px solid;
   box-shadow: 0 0 10px #719ECE;
 }
 
+input[type=submit]{
+  background-color: #007c89;
+  padding: 10px;
+  font-size: 14px;
+  weight: bold;
+}
+
 header {
-  padding: 50px;
   word spacing: -0.2rem
   line height: 1.1;
   color: #241c15;
@@ -19,10 +27,15 @@ header {
   text-align: left;
 }
 
-
-
 body {
+  color: #241c15;
+  font-size: 14px;
+  font-family: 'Proza Libre', sans-serif;
+  text-align: left;
   padding: 50px;
+  margin: 150px;
+}
+section{
   color: #241c15;
   font-size: 14px;
   font-family: 'Proza Libre', sans-serif;
@@ -32,7 +45,6 @@ body {
 }
 
 footer {
-padding: 50px;
   color: rgba(36, 28, 21, 0.65)
   font-size: 11px;
   text-align: left;
@@ -44,20 +56,33 @@ padding: 50px;
   text-align: left;
 }
 
-#button {
+button {
   align: right;
   font-size: 14px;
   padding: 25px;
   weight: 1px;
   background-color: white;
+}
 
+.logo1{
+  display: none;
+}
+.logo2{
+  display: block;
+  float: left;
+}
+
+.form{
+  display: inline;
+  width: 70%;
+  float: right;
 }
 @media screen and (max-width: 600px) {
   /* For mobile phones: */
   .flex-container {
     display: inline;
   }
-  div {
+  article {
     display: none;
   }
 
@@ -65,3 +90,10 @@ padding: 50px;
     display: none;
     float: none;
   }
+  .logo1{
+    display: inline;
+  }
+  .logo2{
+    display: none;
+  }
+}

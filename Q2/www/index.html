@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FakeChimp's Registration Form</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Proza+Libre&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" async></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <img src="media/logo2.png" alt="logo" width="120px">
+</head>
+
+<header>
+  Get Started With Your Account
+</header>
+
+<body>
+  <article>Find your people. Engage your customers. Bulid your brand. Do it all with FakeChimp's Marketing Platform.</article>
+
+  <form onsubmit="return validateForm();" action="http://cp202-server.appspot.com/register" method="post" enctype="multipart/form-data">
+    <p>
+      <input type="hidden" name="student_id" id="student_id" value="180127790">
+    </p>
+
+    <b>Email</b>
+    <p>
+      <input type="text" name="email" id="email">
+    </p>
+
+    <b>Username</b>
+    <p>
+      <input type="text" name="username" id="username">
+    </p>
+
+    <b>Password</b>
+    <p>
+      <input type="password" name="password" id="password" >
+    </p>
+    <script>
+    function showPass(){
+      var x = document.getElementById("password");
+      if (x.type === "password"){
+        x.type = "text";
+      }
+      else {
+        x.type = "password";
+      }
+    }
+    </script>
+    <a href="javascript: showPass()" style="color: #007c89" onclick=""><i class="fa fa-eye" aria-hidden="false"></i> Show</a>
+
+    <p>
+      <input type="submit" value="Get Started!">
+    </p>
+  </form>
+
+</body>
+
+
+<footer>
+  @2019 All Rights Reserved. FakeChimp® is a registered trademark of WLUCP202 Class.
+</footer>
+
+</html>
